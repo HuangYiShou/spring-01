@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+<!--    开启注解-->
+    <context:component-scan base-package="com.qf.shou.spring"/>
+
+    <!--spring 给创建对象
+  spring 核心配置文件
+   scope  默认所有的对象都是单例(singleton)     prototype 创建普通对象
+    子元素  property
+     三个属性    name 属性的名称  value 基本类型   ref 指向容器另外一个对象
+      util list map array
+      p   对象的属性  xxx="" xxx-ref=""
+      c -->
+    <!--<bean id="user" class="com.smart.spring.bean.User"
+          scope="prototype"
+          init-method="init"
+          destroy-method="destroy"
+          lazy-init="true" p:username="admin" p:address-ref="address">
+
+        <property name="list" ref="list">
+            &lt;!&ndash;            <list>&ndash;&gt;
+            &lt;!&ndash;                <value>11111</value>&ndash;&gt;
+            &lt;!&ndash;                <value>2</value>&ndash;&gt;
+            &lt;!&ndash;                <value>3</value>&ndash;&gt;
+            &lt;!&ndash;                <value>5</value>&ndash;&gt;
+            &lt;!&ndash;                <value>6</value>&ndash;&gt;
+            &lt;!&ndash;            </list>&ndash;&gt;
+        </property>
+
+        <property name="map" ref="map">
+            &lt;!&ndash;            <map>&ndash;&gt;
+            &lt;!&ndash;                <entry key="1" value="hehe"/>&ndash;&gt;
+            &lt;!&ndash;            </map>&ndash;&gt;
+        </property>
+    </bean>
+
+    <util:list id="list">
+        <value>111</value>
+    </util:list>
+
+    <util:map id="map">
+        <entry key="" value=""/>
+    </util:map>
+    <bean id="address" class="com.smart.spring.bean.Address">
+
+    </bean>-->
+
+
+</beans>
